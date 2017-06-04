@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="archetype-temp">
+    <Appenders>
+        <!-- Console appender for logging into the console. Current version not working in CMD. -->
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %p %marker %m %X %ex %n"/>
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+        <Logger name="javax.ws.rs.client.Client" level="info"  additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>

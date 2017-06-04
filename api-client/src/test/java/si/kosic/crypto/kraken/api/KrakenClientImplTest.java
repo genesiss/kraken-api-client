@@ -4,7 +4,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
 /**
- * @author ssituk (Petrol d.d.)
+ * @author ssituk
  */
 
 class KrakenClientImplTest {
